@@ -1,0 +1,40 @@
+AKIAJ2PIT5LLTEFZRXWA
+OYb+YguHtDyOPyByW05ppIs5jn3TcBYhYXzMTLLn
+
+
+ aws-verification@amazon.com
+ 
+ 
+ created ecs cluster
+ it helps to create docker demon, autoscaling, 
+ 
+ 
+ https://stackoverflow.com/questions/47579041/installing-docker-on-redhat-linux-issue-with-container-selinux-and-selinux
+ 
+ sudo yum --enablerepo=* install container-selinux
+ 
+ yum install docker-ce.
+ 
+ 
+ 
+ https://git.centos.org/summary/rpms!container-selinux.git
+ 
+ 
+ #!/bin/bash
+echo ECS_CLUSTER=your_cluster_name >> /etc/ecs/ecs.config
+
+https://www.rpmfind.net/linux/rpm2html/search.php?query=libselinux&submit=Search+...&system=&arch=
+
+Installed:
+  container-selinux.noarch 2:2.73-2.el7
+
+Dependency Updated:
+  libselinux.x86_64 0:2.5-14.1.el7                             libselinux-python.x86_64 0:2.5-14.1.el7             libselinux-utils.x86_64 0:2.5-14.1.el7
+  libsemanage.x86_64 0:2.5-14.el7                              libsemanage-python.x86_64 0:2.5-14.el7              libsepol.x86_64 0:2.5-10.el7
+  policycoreutils.x86_64 0:2.5-29.el7                          policycoreutils-python.x86_64 0:2.5-29.el7          selinux-policy.noarch 0:3.13.1-229.el7_6.5
+  selinux-policy-targeted.noarch 0:3.13.1-229.el7_6.5          setools-libs.x86_64 0:3.3.8-4.el7
+  
+  https://docs.aws.amazon.com/AmazonECS/latest/developerguide/launch_container_instance.html
+  
+  https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-agent-install.html
+

@@ -1,8 +1,8 @@
 #https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/blob/master/main.tf
 #https://gist.github.com/sandcastle/4e7b979c480690044bd8
 provider "aws" {
-	access_key = "AKIAJARNPTHJMLPLN2WA"
-	secret_key = "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"
+	access_key = "XXXXXX"
+	secret_key = "XXXXX"
 	region = "us-east-1"
 }
 
